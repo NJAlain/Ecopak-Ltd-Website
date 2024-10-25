@@ -1,0 +1,274 @@
+/* Smooth transitions for nav links and dropdown items */
+.navbar-nav .nav-link, .dropdown-item {
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover, .dropdown-item:hover {
+    color: #198754; /* Change color to green on hover */
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown-item i {
+    margin-right: 8px;
+    color: #198754; /* Add green color to the icons */
+}
+
+/* Smooth hover effect for dropdown items */
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #198754;
+}
+
+/* Add smooth transition to buttons */
+button {
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #198754;
+    border-color: #198754;
+    color: white;
+}
+
+.hero-section {
+    background-image: url('../images/hero-bg2.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Product Cards */
+.card {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS for consistent image size */
+img, .card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 300px;
+    max-height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Adjust card image height based on screen size */
+.card-img-top {
+    height: 200px;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .card-img-top {
+        height: 250px; /* Increase the height on larger screens */
+    }
+}
+
+@media (max-width: 767px) {
+    .card-img-top {
+        height: 150px; /* Decrease the height on smaller screens */
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.about-section {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.product-details {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Contact us page */
+.contact-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.contact-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-section h4 {
+    color: #198754;
+    margin-bottom: 15px;
+}
+
+.contact-section p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contact-section .social-links a {
+    color: #198754;
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.contact-section .social-links a:hover {
+    color: #155724;
+}
+
+.map iframe {
+    border-radius: 8px;
+}
+
+.form-control {
+    border-radius: 8px;
+    box-shadow: none;
+    border-color: #ced4da;
+}
+
+.form-control:focus {
+    border-color: #198754;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: #198754 !important; /* Change the background color */
+    border-color: #198754 !important;     /* Change the border color */
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #157347 !important; /* Darken the color on hover/focus */
+    border-color: #146c43 !important;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 30px 0;
+}
+
+footer h5 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #198754 ;
+}
+
+footer .fab {
+    font-size: 24px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    color: #28a745;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #198754;
+}
+
+@media (max-width: 768px) {
+    .contact-section .row {
+        flex-direction: column;
+    }
+    .social-links {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer .col-md-4 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+/* About Us Page Custom Styles */
+.about-header {
+    background-color: #198754 ;
+    padding: 60px 0;
+}
+
+.about-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.about-header p {
+    font-size: 1.25rem;
+}
+
+.about-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.about-section h2 {
+    color: #198754 ;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.about-section p.lead {
+    font-size: 1.25rem;
+    color: #6c757d;
+}
+
+.about-section h3 {
+    font-size: 1.75rem;
+    color: #198754 ;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1rem;
+    color: #343a40;
+    line-height: 1.6;
+}
